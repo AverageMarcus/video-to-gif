@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video-to-Gif</title>
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <script src="/scripts/loading-bar.js"></script>
+  <script src="/scripts/gif.js"></script>
+</head>
+<body>
+  <loading-bar></loading-bar>
+
+  <div class="main">
+    <a href="#" id="selectVideo">Select Video</a>
+    <a href="#" id="convert" class="hide">Convert to Gif</a>
+    <input type="file" id="file" accept="video/*" class="hide" />
+    <video id="video" class="hide" muted></video>
+    <img id="result" class="hide" />
+    <a href="#" id="download" class="hide">Download Gif</a>
+  </div>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

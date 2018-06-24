@@ -1,0 +1,47 @@
+body {
+  background: #4abdac;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+
+a, a:visited {
+  color: #fc4a1a;
+  text-shadow: 1px 4px 0 #f7b733;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none !important;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.main > * {
+  display: flex;
+  max-height: 100%;
+}
+.main a {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 10vw;
+  text-align: center;
+}
+
+#download {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 7vw;
+  transform: translate(-50%, -50%);
+}
