@@ -36,7 +36,7 @@ fileSelector.addEventListener('change', function() {
 
 video.addEventListener('canplay', () => {
   let timer = null;
-  const intervalDelay = 1000 / 30;
+  const intervalDelay = 1000 / 15;
   const gif = new GIF({
     workers: 5,
     workerScript: '/scripts/gif.worker.js',
