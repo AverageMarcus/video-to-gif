@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="manifest" href="manifest.json">
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#4abdac"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Video-to-Gif</title>
   <link rel="stylesheet" type="text/css" href="/styles/main.css">
   <script src="/scripts/loading-bar.js"></script>
-  <script src="/scripts/gif.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
 </head>
 <body>
   <loading-bar></loading-bar>
@@ -21,6 +27,7 @@
     <a href="#" id="download" class="hide">Download Gif</a>
   </div>
 
+  <script src="/scripts/gif.js"></script>
   <script src="/scripts/main.js"></script>
 </body>
 </html>
